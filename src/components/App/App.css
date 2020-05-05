@@ -11,3 +11,11 @@
   text-align: center;
   width: 100%;
 }
+
+.navBar {
+  display: inline-block;
+  position: fixed;
+  background: white;
+  height: 30px;
+  z-index: 1000;
+}
