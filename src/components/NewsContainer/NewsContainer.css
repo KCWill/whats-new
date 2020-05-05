@@ -1,11 +1,12 @@
-h3 {
-    color: white;
-}
-
-img {
-    width: 300px;
-}
-
-p {
-    color: white;
-}
+.newsContainer{
+    display: flex;
+    position: absolute;
+    top: 50px;
+    left: 200px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100% - 200px;
+    height: calc(100% - 50px);
+    border: 1px solid green;
+    overflow: scroll;
+  }

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import local from '../../data/local';
 import './App.css';
 import NewsContainer from '../NewsContainer/NewsContainer.js'
+import Menu from '../Menu/Menu.js'
 
 class App extends Component {
   constructor() {
@@ -15,16 +16,16 @@ class App extends Component {
   render () {
     return (
       <div className="app">
-        {local.map( props => {
-          return (
-            <NewsContainer
-            id={props.id}
-            headline={props.headline}
-            img={props.img}
-            description={props.description}
-            url={props.url}>
-          </NewsContainer>);
-        })}
+        <section className='topBar'>
+          What's new?
+        </section>
+        <section>
+        <Menu></Menu>
+        </section>
+        <section>
+        <NewsContainer articles={local}></NewsContainer>
+        </section>
+     
       </div>
     );
   }

@@ -1,18 +1,18 @@
 import React from 'react';
 import './NewsContainer.css'
+import NewsArticle from '../NewsArticle/NewsArticle.js'
 
 const NewsContainer = (props) => {
     return (
-        <section>
-            <h3>{props.headline}</h3>
-            <img src={props.img}/>
-            <p>{props.description}</p>
-            <form action={props.url}>
-                <button type='submit' value='View story'></button>
-            </form>
-        </section>
-    )
-
+    <section  className='newsContainer'>
+    {props.articles.map(article => {
+        return (
+            <section className='newsCard'>
+                <NewsArticle info={article}></NewsArticle>
+            </section>
+        )}
+    )}
+    </section>)
 };
 
 export default NewsContainer;
