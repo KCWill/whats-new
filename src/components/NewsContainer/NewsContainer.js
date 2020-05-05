@@ -7,7 +7,7 @@ const NewsContainer = (props) => {
     <section  className='newsContainer'>
     {props.articles.map(article => {
         return (
-            <section className='newsCard'>
+            <section>
                 <NewsArticle info={article}></NewsArticle>
             </section>
         )}

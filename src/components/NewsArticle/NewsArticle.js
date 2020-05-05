@@ -4,7 +4,7 @@ import './NewsArticle.css';
 const NewsArticle = (props) => {
     const {id, headline, img, description, url} = props.info;
     return (
-        <section id={id}>
+        <section id={id} className='newsCard'>
             <h3>{headline}</h3>
             <img src={img}/>
             <p>{description}</p>
