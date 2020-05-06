@@ -13,10 +13,10 @@ p {
     color: white;
 }
 
-button {
+button.viewStory {
     color: black;
-    width: 70px;
-    background-color:white;
+    width: 100px;
+    background-color: green;
     height: 1.5em;
 }
 
