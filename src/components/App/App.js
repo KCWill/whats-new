@@ -12,17 +12,19 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
+      stories: {
       local: local,
       entertainment: entertainment,
       health: health,
       science: science,
-      technology: technology,
+      technology: technology
+      },
       category: 'local'
     }
   }
 
   categorySelect = (category) => {
-    const categorizedNews = this.state[category];
+    const categorizedNews = this.state.stories[category];
     this.setState({[category]: categorizedNews, category:category});
   }
 
@@ -36,7 +38,7 @@ class App extends Component {
         <Menu categorySelect={this.categorySelect}/>
         </section>
         <section>
-        <NewsContainer articles={this.state} category={this.state.category}></NewsContainer>
+        <NewsContainer articles={this.state.stories} category={this.state.category}></NewsContainer>
         </section>
      
       </div>
