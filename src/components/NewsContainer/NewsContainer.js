@@ -5,9 +5,9 @@ import NewsArticle from '../NewsArticle/NewsArticle.js'
 const NewsContainer = (props) => {
     return (
     <section  className='newsContainer'>
-    {props.articles.map(article => {
+    {props.articles[props.category].map(article => {
         return (
-            <section>
+            <section key={article.id}>
                 <NewsArticle info={article}></NewsArticle>
             </section>
         )}
