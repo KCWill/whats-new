@@ -9,7 +9,7 @@ const NewsArticle = (props) => {
             <img src={img}/>
             <p>{description}</p>
             <form action={url}>
-                <button type='submit'>'View Story'</button>
+                <button className='viewStory' type='submit'>'View Story'</button>
             </form>
         </section>
     )
