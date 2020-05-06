@@ -19,8 +19,7 @@ class SearchForm extends Component {
         this.props.search(searchTerm)
         this.clearInputs();
     }
-
-
+    
     clearInputs = () => {
         this.setState({textToSearch: ''});
     }

@@ -24,15 +24,14 @@ class App extends Component {
   }
 
   categorySelect = (category) => {
-    this.setState({category:category});
+    this.setState({...this.state, category});
   }
 
   search = (term) => {
-    console.log(this.state[this.state.category])
     const foundArticles = this.state[this.state.category].filter((article) => {
       return article.headline.includes(term) || article.description.includes(term)
     })
-    this.setState({category: 'searched', searched: foundArticles});
+    this.setState({...this.state, category: 'searched', searched: foundArticles});
   };
   
 
@@ -44,10 +43,11 @@ class App extends Component {
           <SearchForm search={this.search} />
         </section>
         <section>
-        <Menu categorySelect={this.categorySelect}/>
+          <Menu categorySelect={this.categorySelect}/>
         </section>
         <section>
-        <NewsContainer articles={this.state} category={this.state.category}></NewsContainer>
+          <NewsContainer articles={this.state} category={this.state.category}>
+          </NewsContainer>
         </section>
      
       </div>

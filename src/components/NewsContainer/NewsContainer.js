@@ -2,10 +2,11 @@ import React from 'react';
 import './NewsContainer.css'
 import NewsArticle from '../NewsArticle/NewsArticle.js'
 
-const NewsContainer = (props) => {
+const NewsContainer = ({articles, category}) => {
     return (
     <section  className='newsContainer'>
-    {props.articles[props.category].map(article => {
+    {(!articles[category].length && category === 'searched') && <h3>Your search did not produce any results.</h3>}
+    {articles[category].map(article => {
         return (
             <section key={article.id}>
                 <NewsArticle info={article}></NewsArticle>
