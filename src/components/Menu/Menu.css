@@ -17,3 +17,7 @@ button.menu {
   background-color:black;
   height: 1.5em;
 }
+
+button.menu:focus {
+  background-color: yellow;
+}

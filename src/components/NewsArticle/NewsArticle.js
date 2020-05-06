@@ -2,7 +2,7 @@ import React from 'react';
 import './NewsArticle.css';
 
 const NewsArticle = (props) => {
-    const {id, headline, img, description, url} = props.info;
+    const { id, description, url, img, headline } = props.info;
     return (
         <section id={id} key={id} className='newsCard'>
             <h3>{headline}</h3>
