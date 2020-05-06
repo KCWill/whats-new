@@ -6,39 +6,48 @@ import science from '../../data/science'
 import technology from '../../data/technology'
 import NewsContainer from '../NewsContainer/NewsContainer.js'
 import Menu from '../Menu/Menu.js'
+import SearchForm from '../SearchForm/SearchForm.js'
 import './App.css';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      stories: {
       local: local,
       entertainment: entertainment,
       health: health,
       science: science,
-      technology: technology
-      },
+      technology: technology,
+      searched: [],
       category: 'local'
     }
   }
 
   categorySelect = (category) => {
-    const categorizedNews = this.state.stories[category];
-    this.setState({[category]: categorizedNews, category:category});
+    this.setState({category:category});
   }
+
+  search = (term) => {
+    console.log(this.state[this.state.category])
+    const foundArticles = this.state[this.state.category].filter((article) => {
+      return article.headline.includes(term) || article.description.includes(term)
+    })
+    this.setState({category: 'searched', searched: foundArticles});
+  };
+  
 
   render () {
     return (
       <div className="app">
         <section className='topBar'>
           <h1>What's new?</h1>
+          <SearchForm search={this.search} />
         </section>
         <section>
         <Menu categorySelect={this.categorySelect}/>
         </section>
         <section>
-        <NewsContainer articles={this.state.stories} category={this.state.category}></NewsContainer>
+        <NewsContainer articles={this.state} category={this.state.category}></NewsContainer>
         </section>
      
       </div>
