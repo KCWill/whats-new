@@ -5,9 +5,22 @@
 }
 
 .app {
-  display: flex;
+  display: inline-block;
+  position: absolute;
   background: #141527;
   height: 100vh;
-  text-align: center;
   width: 100%;
 }
+
+.topBar {
+  display: flex;
+  position: absolute;
+  top: 0px;
+  background: white;
+  height: 50px;
+  width: 100%;
+  z-index: 1000;
+}
+
+
+

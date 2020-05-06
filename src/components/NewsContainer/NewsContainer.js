@@ -1,6 +1,18 @@
 import React from 'react';
 import './NewsContainer.css'
+import NewsArticle from '../NewsArticle/NewsArticle.js'
 
-// NEWSCONTAINER COMPONENT CODE GOES HERE
+const NewsContainer = (props) => {
+    return (
+    <section  className='newsContainer'>
+    {props.articles.map(article => {
+        return (
+            <section>
+                <NewsArticle info={article}></NewsArticle>
+            </section>
+        )}
+    )}
+    </section>)
+};
 
 export default NewsContainer;
