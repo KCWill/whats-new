@@ -39,7 +39,7 @@ class App extends Component {
     return (
       <main className="app">
         <section className='topBar'>
-          <h1>What's</h1><h1 className='new'>new?</h1>
+          <h1>What's</h1><h1 className='new'>New?</h1>
           <SearchForm search={this.search} />
         </section>
         <section>
