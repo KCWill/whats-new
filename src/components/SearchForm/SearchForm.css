@@ -1,0 +1,23 @@
+input {
+    background-color: #141527;
+    padding: 3px;
+    font-size: 1.3em;
+    border: none;
+    margin-left: 47px;
+
+}
+
+.search-button {
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    background-color: #AC5FEE;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 25px;
+    height: 30px;
+    font-size: 1em;
+    width: 130px;
+    margin-right: 10px;
+}

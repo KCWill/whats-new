@@ -17,7 +17,7 @@ class Menu extends Component {
             health: false,
         }
     }
-    
+
     handleSelection = (event) => {
         event.preventDefault();
         const selectedCategory = event.target.closest('button').name;
@@ -25,8 +25,6 @@ class Menu extends Component {
         this.setState(newButtonStyling);
         this.props.categorySelect(selectedCategory);
     };
-
-
 
     render() {
     return (

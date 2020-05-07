@@ -4,6 +4,7 @@
     top: 50px;
     left: 200px;
     flex-direction: row;
+    justify-content: space-around;
     flex-wrap: wrap;
     width: 100% - 200px;
     height: calc(100% - 50px);

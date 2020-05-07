@@ -15,12 +15,23 @@
 .topBar {
   display: flex;
   position: absolute;
+  align-items: center;
   top: 0px;
-  background: white;
+  background: #141527;
   height: 50px;
   width: 100%;
   z-index: 1000;
 }
 
+h1 {
+  display: inline-block;
+  color: white;
+  margin-left: 15px;
+}
+
+h1.new {
+  color: #FFA408;
+  margin-left: 5px;
+}
 
 
