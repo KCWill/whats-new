@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import local from '../../data/local';
-import entertainment from '../../data/entertainment'
-import health from '../../data/health'
-import science from '../../data/science'
-import technology from '../../data/technology'
+import entertainment from '../../data/entertainment.js'
+import health from '../../data/health.js'
+import science from '../../data/science.js'
+import technology from '../../data/technology.js'
 import NewsContainer from '../NewsContainer/NewsContainer.js'
 import Menu from '../Menu/Menu.js'
 import SearchForm from '../SearchForm/SearchForm.js'
@@ -37,20 +37,19 @@ class App extends Component {
 
   render () {
     return (
-      <div className="app">
+      <main className="app">
         <section className='topBar'>
-          <h1>What's new?</h1>
+          <h1>What's</h1><h1 className='new'>New?</h1>
           <SearchForm search={this.search} />
         </section>
         <section>
-          <Menu categorySelect={this.categorySelect}/>
+          <Menu categorySelect={this.categorySelect} category={this.state.category}/>
         </section>
         <section>
-          <NewsContainer articles={this.state} category={this.state.category}>
-          </NewsContainer>
+          <NewsContainer articles={this.state} category={this.state.category} />
         </section>
      
-      </div>
+      </main>
     );
   }
 }

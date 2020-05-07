@@ -1,31 +1,52 @@
-h3 {
+h3,p {
     display: inline-block;
-    color: white;
+    color: black;
 }
 
-img {
+.rightArrow {
     display: inline-block;
+    width: 15px;
+    margin-left: 100px;
+}
+
+
+.viewStoryLink {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    background-color:#AC5FEE;
+    height: 30px;
+}
+
+button.viewStoryButton {
+    color: white;
+    background-color:#AC5FEE; 
+    font-size: 1.5em;
+    border-style: none;
+    height: 30px;
     width: 100%;
 }
 
-p {
-    display: inline-block;
-    color: white;
-}
-
-button.viewStory {
-    color: black;
-    width: 100px;
-    background-color: green;
-    height: 1.5em;
-}
-
-.newsCard {
+.article-container {
     display: flex;
     position: relative;
     flex-direction: column;
     align-items: center;
-    height: 420px;
-    width: 350px;
-    border: 1px solid white;
+    justify-content: space-between;
+    background-color: white;
+    width: 500px;
+    height: 350px;
+    margin: 15px;
+    padding: 0px 10px 0px 10px;
+    text-align: center;
+}
+
+.image-crop {
+    width: 500px;
+    height: 200px;
+    background-position: center center;
+    background-size: 500px;
+    background-repeat: no-repeat;
 }
