@@ -37,7 +37,7 @@ class Menu extends Component {
             <img className='menu' src={technologyIcon} alt='Menu icon'/>
             <p className='menuText'>Technology</p>
         </button>
-        <button className={`menu ${this.state.entertainment && 'currentPage'}`} name='entertainment' onClick={this.handleSelection}>
+        <button data-testid='entertainment-button' className={`menu ${this.state.entertainment && 'currentPage'}`} name='entertainment' onClick={this.handleSelection}>
             <img className='menu' src={entertainmentIcon} alt='Menu icon'/>
             <p className='menuText'>Entertainment</p>
         </button>
