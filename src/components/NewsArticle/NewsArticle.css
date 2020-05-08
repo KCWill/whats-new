@@ -1,52 +1,52 @@
 h3,p {
-    display: inline-block;
-    color: black;
+  display: inline-block;
+  color: black;
 }
 
 .rightArrow {
-    display: inline-block;
-    width: 15px;
-    margin-left: 100px;
+  display: inline-block;
+  width: 15px;
+  margin-left: 100px;
 }
 
 
 .viewStoryLink {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 500px;
-    background-color:#AC5FEE;
-    height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  background-color:#AC5FEE;
+  height: 30px;
 }
 
 button.viewStoryButton {
-    color: white;
-    background-color:#AC5FEE; 
-    font-size: 1.5em;
-    border-style: none;
-    height: 30px;
-    width: 100%;
+  color: white;
+  background-color:#AC5FEE; 
+  font-size: 1.5em;
+  border-style: none;
+  height: 30px;
+  width: 100%;
 }
 
 .article-container {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    background-color: white;
-    width: 500px;
-    height: 350px;
-    margin: 15px;
-    padding: 0px 10px 0px 10px;
-    text-align: center;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  width: 500px;
+  height: 350px;
+  margin: 15px;
+  padding: 0px 10px 0px 10px;
+  text-align: center;
 }
 
 .image-crop {
-    width: 500px;
-    height: 200px;
-    background-position: center center;
-    background-size: 500px;
-    background-repeat: no-repeat;
+  width: 500px;
+  height: 200px;
+  background-position: center center;
+  background-size: 500px;
+  background-repeat: no-repeat;
 }
