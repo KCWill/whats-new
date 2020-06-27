@@ -1,4 +1,4 @@
-# What's New? 
+# What's New? -- [![Build Status](https://travis-ci.org/KCWill/whats-new.svg?branch=master)](https://travis-ci.org/KCWill/whats-new)
 
 ## Abstract
 
