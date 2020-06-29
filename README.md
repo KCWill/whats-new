@@ -1,4 +1,7 @@
 # What's New?
+
+[![Build Status](https://travis-ci.org/KCWill/whats-new.svg?branch=master)](https://travis-ci.org/KCWill/whats-new)
+
 ## Abstract
 
 What's New is an application that shows different news stories. The user is able to select the category of news and search for articles. This project focused on practicing with React, JSX, and testing. 
